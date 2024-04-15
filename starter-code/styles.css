@@ -113,3 +113,7 @@ input[type="checkbox"] {
 input[type="range"] {
   accent-color: #a4ffaf;
 }
+
+#copied {
+  color: #a4ffaf;
+}

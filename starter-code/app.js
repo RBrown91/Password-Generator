@@ -12,6 +12,7 @@ const passwordStrengthDisplay = document.getElementById(
   "password-strength-display"
 );
 const copyButton = document.getElementById("copy-button");
+const copiedOutput = document.getElementById("copied");
 
 let includeLowers = false;
 let includeUppers = false;
@@ -45,6 +46,7 @@ const generatePassword = () => {
   }
   passwordOutput.style.color = "white";
   passwordOutput.textContent = password;
+  copiedOutput.textContent = "";
 };
 
 const displayStrengthScore = () => {
@@ -117,5 +119,5 @@ symbolsSelection.addEventListener("click", () => {
 
 copyButton.addEventListener("click", () => {
   navigator.clipboard.writeText(passwordOutput.textContent);
-  alert("Password copied to clipboard");
+  copiedOutput.textContent = "COPIED";
 });
