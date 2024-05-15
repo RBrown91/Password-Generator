@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](starter-code/assets/images/screenshot.png)
+![](/assets/images/screenshot.png)
 
 ## My process
 
